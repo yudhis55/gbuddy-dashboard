@@ -24,7 +24,7 @@ const DashboardPage: React.FC<DashboardPageProps> = async ({ params }) => {
     return (
         <div className="flex-col">
             <div className="flex-1 space-y-4 p-8 pt-6">
-                <Heading title="Dashboard" description="Overview of your store" />
+                <Heading title="Dashboard" description="Ini Halaman Dashboard" />
 
                 <Separator />
 
@@ -39,7 +39,7 @@ const DashboardPage: React.FC<DashboardPageProps> = async ({ params }) => {
 
                         <CardContent>
                             <div className="text-2xl font-bold">
-                                {formatter.format(totalRevenue)}
+                                <div className="text-2xl font-bold">{totalRevenue}</div>
                             </div>
                         </CardContent>
                     </Card>
@@ -51,7 +51,7 @@ const DashboardPage: React.FC<DashboardPageProps> = async ({ params }) => {
                         </CardHeader>
                                 
                         <CardContent>
-                            <div className="text-2xl font-bold">+{salesCount}</div>
+                            <div className="text-2xl font-bold">{salesCount}</div>
                         </CardContent>
                     </Card>
                         
